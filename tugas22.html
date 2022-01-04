@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tugas 22</title>
+	<style type="text/css">
+		input:focus, select:focus, textarea:focus {
+			outline: none;
+			border: 2px solid skyblue;
+		}
+	</style>
+</head>
+<body>
+	<h1>Napak Tilas</h1>
+	<form name="Form">
+		<fieldset>
+			<legend>Form</legend>
+			<table>
+				<tr>
+					<td>Nama</td>
+					<td>:
+						<input 
+							type="text"
+							placeholder="Nama Lengkap" 
+						>
+					</td>
+				</tr>
+				<tr>
+					<td>Username</td>
+					<td>:
+						<input 
+							type="text"
+							placeholder="Username"
+						>
+					</td>
+				</tr>
+				<tr>
+					<td>Email</td>
+					<td>:
+						<input 
+							type="email"
+							name="email" 
+							placeholder="Your Email" 
+							autocomplete="on" 
+						>
+					</td>
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td>:
+						<input
+							type="password"
+							placeholder="Password"
+							required
+						>
+					</td>
+				</tr>
+				<tr>
+					<td>Alamat Web</td>
+					<td>:
+						<input
+							type="url"
+							placeholder="Masukan URL Web"
+						>
+					</td>
+				</tr>
+				<tr>
+					<td>Tanggal Lahir</td>
+					<td>:
+						<input 
+							type="date"
+						>
+					</td>
+				</tr>
+				<tr>
+					<td>Umur</td>
+					<td>:
+						<input
+							type="number"
+							min="1"
+							max="99">
+					</td>
+				</tr>
+				<tr>
+					<td>Jenis Kelamin</td>
+					<td>:
+						<label>
+							<input
+								type="radio"
+								name="gender"
+								value="Laki-Laki">
+							Laki-Laki
+						</label>
+						<label>
+							<input
+								type="radio"
+								name="gender"
+								value="Perempuan">
+							Perempuan
+						</label>
+					</td>
+				</tr>
+				<tr>
+					<td>Agama</td>
+					<td>:
+						<select name="agama">
+							<option value="Islam" selected>Islam</option>
+							<option value="Katolik">Katolik</option>
+							<option value="Kriten">Kristen</option>
+							<option value="Budha">Budha</option>
+							<option value="Hindu">Hindu</option>
+							<option value="Konghuchu">Konghuchu</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Biografi</td>
+					<td>:
+						<textarea 
+							rows="2"
+							cols="20"
+							maxlength="300" 
+						></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td>Foto</td>
+					<td>
+						<img src="logo1.jpg" alt="html logo coffee" width="250px">
+					</td>
+				</tr>
+				<tr>
+					<td>Audio</td>
+					<td>:
+						<audio src="sample.mp3" controls></audio>
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+		<input type="submit" name="Submit">
+	</form>
+</body>
+</html>
